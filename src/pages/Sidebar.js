@@ -70,7 +70,7 @@ function Sidebar() {
   return (
     <div className="max-w-7xl mx-auto flex space-x-1">
       {/* Sidebar Div */}
-      <div className="flex flex-col space-y-10 bg-blue-950 h-screen w-[25%] p-2">
+      <div className="flex flex-col space-y-10 bg-blue-950 h-auto w-[25%] p-2">
         {/* Select country and city */}
         <div className="flex flex-col justify-center space-y-5 min-w-sm">
           <Select
