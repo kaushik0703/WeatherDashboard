@@ -117,16 +117,16 @@ function Sidebar() {
         <div className="flex items-center space-x-5 text-white">
           <p>
             <WbSunnyIcon />
-            {moment(
-              new Date(weatherDetails?.daily?.sunrise[0]).getTime()
-            ).format("LT")}
+            {weatherDetails?.daily?.sunrise[0] 
+              ? moment(new Date(weatherDetails.daily.sunrise[0]).getTime()).format("LT") 
+              : " "}
           </p>
 
           <p>
             <NightlightRoundIcon />
-            {moment(
-              new Date(weatherDetails?.daily?.sunset[0]).getTime()
-            ).format("LT")}
+            {weatherDetails?.daily?.sunset[0] 
+              ? moment(new Date(weatherDetails.daily.sunset[0]).getTime()).format("LT") 
+              : " "}
           </p>
         </div>
         
